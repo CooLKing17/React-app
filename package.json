@@ -1,0 +1,24 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "this is react",
+  "main": "Index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CooLKing17/React-app.git"
+  },
+  "author": "Avinash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CooLKing17/React-app/issues"
+  },
+  "homepage": "https://github.com/CooLKing17/React-app#readme",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
