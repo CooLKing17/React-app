@@ -3,7 +3,12 @@ module.exports = {
     './src/**/*.{html,js,jsx,ts,tsx}', // Adjust the paths according to your project structure
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+      'custom':'1024px',
+      
+      },
+    },
   },
   plugins: [],
 };
