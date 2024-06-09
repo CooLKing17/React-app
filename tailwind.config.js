@@ -6,8 +6,10 @@ module.exports = {
     extend: {
       screens:{
       'custom':'1024px',
-      
+      'xm':{'max':'500px'},
+      'ssm':{'max':'400px'}
       },
+     
     },
   },
   plugins: [],
