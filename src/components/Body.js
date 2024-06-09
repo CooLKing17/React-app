@@ -10,7 +10,7 @@ const Body = () => {
   const data = useRestoList();// we can pass props 
   const [isTrue, setIstrue] = useState();
   const { search } = useContext(SearchContext);
-  const inputRef =useRef();
+
   console.log(filteredData);
   console.log(isTrue);
 
@@ -27,19 +27,18 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="pt-16 mt-10">
-      <div>
-        {search ? (
-          <div className={{ search }}>
+      <div style={{display : search ? "none" : "block"}}>
+      
+          <div >
             {" "}
             <SearchBtn
               food={food}
               setFilteredData={setFilteredData}
               setIstrue={setIstrue}
+              
             />
           </div>
-        ) : (
-          <> </>
-        )}
+        
       </div>{" "}
       {isTrue ? (
         <div className="pt-16 mt-16 flex flex-col items-center justify-center h-full">

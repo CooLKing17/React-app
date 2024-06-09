@@ -1,4 +1,5 @@
 export const FilterData = (food, search,  setIstrue ) => {
+  console.log("searching");
 
   if (!search) {
     console.log("no search query");
