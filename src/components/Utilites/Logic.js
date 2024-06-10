@@ -1,3 +1,5 @@
+import { StarIm } from "../Routing/Config";
+
 export const FilterData = (food, search,  setIstrue ) => {
   console.log("searching");
 
@@ -21,3 +23,16 @@ export const FilterData = (food, search,  setIstrue ) => {
   }
   return filteredData;
 };
+
+
+export const ratingStar=(rating)=>{
+  const stars=[];
+  console.log("inn")
+  console.log(rating)
+  const num = parseInt(rating,10)
+  console.log(num)
+  for (let i=0 ; i< num ;i++){
+      stars.push(<img key={i} src={StarIm} alt="star" className="inline-block w-4 h-4" /> )
+  }
+  return stars
+}
