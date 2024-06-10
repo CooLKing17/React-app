@@ -4,7 +4,7 @@ import { useState } from "react"
 export const OwnBtn=({onClick,prop})=>{
    
     console.log("inside btn")
-    return(<button className="bg-orange-200 rounded-xl  sm:w-20 sm:h-10 md:w-20 md:h-10    " onClick={onClick}  >{prop}</button>)
+    return(<button className="bg-orange-200 rounded-xl  sm:w-20 sm:h-10 md:w-20 md:h-10  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300  " onClick={onClick}  >{prop}</button>)
 }
 
 export const SearchBtn=({food,setFilteredData,setIstrue })=>{
