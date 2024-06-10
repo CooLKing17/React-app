@@ -4,6 +4,7 @@ import Shimmer from "./Shimmer";
 import Restocard from "./Restocard";
 import { SearchBtn } from "./Utilites/OwnHtmlTag";
 import { SearchContext } from "./Context/SearchContext";
+import { Link } from "react-router-dom";
 const Body = () => {
   const [food, setFood] = useState();
   const [filteredData, setFilteredData] = useState();
@@ -51,9 +52,12 @@ const Body = () => {
         </div>
       ) : (
         <div className="flex flex-wrap justify-center ">
+
           {filteredData &&
             filteredData.map((restaurant, index) => (
+              <Link to={"/resto/"+restaurant.info.id} key={index}>
               <Restocard key={index} {...restaurant.info} />
+              </Link>
             ))}
         </div>
       )}

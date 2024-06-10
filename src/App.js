@@ -8,6 +8,7 @@ import ContactUs from "./components/ContactUs"
 import Login from "./components/Login"
 import SignUp from "./components/SignUp"
 import Cart from "./components/Cart"
+import RestoDetails from "./components/RestoDetails"
 
 const AppLayout = createBrowserRouter(
     
@@ -47,7 +48,11 @@ const AppLayout = createBrowserRouter(
             {
                 path:"/cart",
                 element:<Cart />
-            }
+            },
+            {
+                path:"/resto/:id",
+                element:<RestoDetails />
+            },
            
         ]
     }

@@ -23,12 +23,12 @@ const useRestoList = () => {
       const list = json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
       ?.restaurants;
 
-        // setFood(list);
+        
         setRestoList(list)
         return list;
     }
     console.log(json)
-        // setFood(list);
+       
         setRestoList(list)
   }
   
