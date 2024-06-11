@@ -3,9 +3,9 @@ const Shimmer=()=>{
     const ShimmerElemet=Array.from({length:14},(_,index)=>(
         <div key={index} className="bg-pink-300 w-44 h-80 shimmer  justify-center items-center text-center m-4">
         <img src={Img} className=""/>
-        <h1 className="text-white  mt-10">Loading ....</h1>
-        <h3  className="text-white ">Loading ....</h3>
-        <h3  className="text-white ">Loading ....</h3>
+        <h1 className="text-white  mt-10">Name ....</h1>
+        <h3  className="text-white ">Menu ....</h3>
+        <h3  className="text-white ">Rating ....</h3>
     </div> 
     )
 
