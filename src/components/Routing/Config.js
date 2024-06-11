@@ -1,6 +1,6 @@
 export const CDNImageLink= "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/"
 export const CDNMenuIm ="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/"
-export const CDNLogoIm="https://img.freepik.com/free-vector/food-shopping-logo-template-design_460848-10299.jpg"
+export const CDNLogoIm="https://image.similarpng.com/very-thumbnail/2021/09/Good-food-logo-design-on-transparent-background-PNG.png"
 export const VEGIm="https://upload.wikimedia.org/wikipedia/commons/d/d4/Vegan_friendly_icon.png"
 export const NONVEGIm="https://www.pngkey.com/png/full/270-2702996_non-veg-portable-network-graphics.png"
 export const StarIm="https://icons.iconarchive.com/icons/goodstuff-no-nonsense/free-space/512/star-icon.png"

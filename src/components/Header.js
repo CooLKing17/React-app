@@ -1,14 +1,15 @@
 import React, { useState ,useContext} from "react";
 import { Link } from "react-router-dom";
-import { CDNLogoIm } from "./Routing/Config";
+// import { CDNLogoIm } from "./Routing/Config";
+import LOGO from '../Assest/Img/Logo.png'
 import { SearchContext } from "./Context/SearchContext";
 const Title = () => (
   <div className=" flex justify-center items-center">
     <Link to="/">
       <img
         alt="Food Villa "
-        src={CDNLogoIm}
-        className="w-10 m-1 custom:w-24 md:w-20 sm:w-16 rounded-xl transition ease-in-out delay-150 bg-gray-100 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300 "
+        src={LOGO}
+        className="w-10 m-1 custom:w-24 md:w-20 sm:w-16 rounded-xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "
       />
     </Link>
     <Link to="/" className="text-3xl font-bold italic font-serif xm:hidden text-black hover:text-pink-500">
@@ -35,7 +36,7 @@ const Header = () => {
   // }
 
   return (
-    <div className=" fixed top-0 left-0 right-0 flex justify-between p-2 bg-yellow-200 ">
+    <div className=" fixed top-0 left-0 right-0 flex justify-between p-1 lg:h-20 bg-yellow-200 ">
       <Title />
       <div className=" flex  justify-end items-center my-2  m-1  p-1">
         <nav className="flex justify-between items-center">

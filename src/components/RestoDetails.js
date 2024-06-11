@@ -8,7 +8,6 @@ import {
   NONVEGIm,
   StarIm,
 } from "./Routing/Config";
-import { OwnBtn } from "./Utilites/OwnHtmlTag";
 import { ratingStar } from "./Utilites/Logic";
 import Menu from "./Utilites/Menu";
 import ShimmerMenu from "./Utilites/ShimmerMenu";
@@ -83,11 +82,10 @@ const RestoDetails = () => {
             </div>
           </div>
           {restoMenu?.map((item, index) => {
-            
-
+           
             return (
               <div key={index} className=" p-4 rounded-lg mb-4">
-                <h3 className="text-2xl font-bold text-black mb-4">
+                <h3 className="text-2xl font-bold text-black mb-4 ">
                   {item?.card?.card?.title}
                 </h3>
                 
