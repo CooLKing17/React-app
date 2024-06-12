@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 // import { CDNLogoIm } from "./Routing/Config";
 import LOGO from '../Assest/Img/Logo.png'
 import { SearchContext } from "./Context/SearchContext";
+import { useSelector } from "react-redux";
+
 const Title = () => (
   <div className=" flex justify-center items-center">
     <Link to="/">
@@ -19,21 +21,14 @@ const Title = () => (
 );
 
 import React from "react";
+import Store from "./Utilites/Store";
 
 const Header = () => {
 
   const {toggleTheme}=useContext(SearchContext)
   const [val, setVel] = useState(true);
 
-  // const handleSearch = () => {
-  //   console.log("in")
-  //   setSearch(true)
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth"
-  //   });
-   
-  // }
+  const cartItem = useSelector(Store=>Store.cart.items)
 
   return (
     <div className=" fixed top-0 left-0 right-0 flex justify-between p-1 lg:h-20 bg-yellow-200 ">
@@ -63,7 +58,7 @@ const Header = () => {
               className="mr-2 md:mr-5 lg:mr-6"
             >
               <Link to="/cart" className="text-black hover:text-pink-500">
-                Cart
+                Cart {cartItem.length} items
               </Link>
             </li>
             <li
