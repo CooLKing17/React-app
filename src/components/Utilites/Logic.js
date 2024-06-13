@@ -36,3 +36,12 @@ export const ratingStar=(rating)=>{
   }
   return stars
 }
+
+
+import { addItem,clearCart,removeItem } from "./CartSilce";
+export const handleData=(prop,dispatch)=>{
+  
+    console.log(prop)
+    dispatch(addItem(prop))
+  
+}

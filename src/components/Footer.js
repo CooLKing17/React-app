@@ -17,9 +17,9 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-2">Quick Links</h2>
             <ul className="text-gray-400">
               <li className="mb-1"><Link to="/" className="hover:underline">Home</Link  ></li>
-              <li className="mb-1"><Link to="/" className="hover:underline">About Us</Link  ></li>
+              <li className="mb-1"><Link to="/aboutus" className="hover:underline">About Us</Link  ></li>
               <li className="mb-1"><Link to="/" className="hover:underline">Services</Link  ></li>
-              <li className="mb-1"><Link to="/" className="hover:underline">Contact</Link  ></li>
+              <li className="mb-1"><Link to="/contactus" className="hover:underline">Contact</Link  ></li>
             </ul>
           </div>
           {/* Social Media Links */}

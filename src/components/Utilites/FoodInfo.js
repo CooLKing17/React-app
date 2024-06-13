@@ -1,16 +1,26 @@
 import { VEGIm,NONVEGIm,CDNMenuIm } from "../Routing/Config";
 import { OwnBtn } from "./OwnHtmlTag";
+import { useDispatch } from "react-redux";
+import { addItem } from "./CartSilce";
+import { handleData } from "./Logic";
 
-const FoodInfo=(
-    {
-        itemAttribute={},
-        name,
-        price,
-        defaultPrice,
-        imageId,
-        description
-    }
-)=>{
+const FoodInfo=({prop})=>{
+  // console.log(prop)
+const 
+{
+     id,
+    itemAttribute={},
+    ratings={},
+    name,
+    price,
+    defaultPrice,
+    imageId,
+    description
+}=prop
+ const dispatch = useDispatch();
+
+
+
     return(
         <>
         <div
@@ -41,6 +51,7 @@ const FoodInfo=(
         <p className="text-sm">
           {description}
         </p>
+        
       </div>
       <div className=" flex flex-col justify-center items-center p-2  rounded-lg">
         <img
@@ -48,7 +59,7 @@ const FoodInfo=(
           className="h-52 w-52 object-cover rounded-lg mb-2"
           alt={name}
         />
-        <OwnBtn prop="ADD" />
+        <OwnBtn onClick={()=>{handleData(prop,dispatch)}} prop="ADD" />
       </div>
     </div>
         </>

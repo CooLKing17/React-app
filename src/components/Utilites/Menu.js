@@ -11,7 +11,7 @@ const Menu =({
     {prop?.map((items, index) => {
 
        return (
-           <FoodInfo key={index} {...items?.card?.info} /> 
+           <FoodInfo key={index} prop={items?.card?.info} /> 
         )
     })}</>
     
