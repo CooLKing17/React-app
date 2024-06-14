@@ -5,7 +5,6 @@ export const SearchContext = createContext ();
 const SearchProviderContext =({children})=>{
     const [search, setSearch] = useState(true);
     const [isTrue , setIstrue]=useState(false)     
-    
     const toggleTheme = () => {
         setSearch((prevTheme) => (prevTheme ? false : true));
             window.scrollTo({

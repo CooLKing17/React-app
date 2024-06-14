@@ -38,10 +38,17 @@ export const ratingStar=(rating)=>{
 }
 
 
-import { addItem,clearCart,removeItem } from "./CartSilce";
+import { addItem  } from "./CartSilce";
+import { SearchContext } from "../Context/SearchContext";
+
 export const handleData=(prop,dispatch)=>{
-  
-    console.log(prop)
-    dispatch(addItem(prop))
+
+  if(prop){
+     
+      dispatch(addItem(prop))
+     
+    }
+   
+    
   
 }

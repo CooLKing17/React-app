@@ -1,4 +1,4 @@
-import React, { useState ,useContext} from "react";
+import React, { useState ,useContext, useRef} from "react";
 import { Link } from "react-router-dom";
 // import { CDNLogoIm } from "./Routing/Config";
 import LOGO from '../Assest/Img/Logo.png'
@@ -27,9 +27,7 @@ const Header = () => {
 
   const {toggleTheme}=useContext(SearchContext)
   const [val, setVel] = useState(true);
-
   const cartItem = useSelector(Store=>Store.cart.items)
-
   return (
     <div className=" fixed top-0 left-0 right-0 flex justify-between p-1 lg:h-20 bg-yellow-200 ">
       <Title />
