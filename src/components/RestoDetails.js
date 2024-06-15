@@ -48,7 +48,7 @@ const RestoDetails = () => {
           <div className="grid justify-items-center p-4">
             <div className="bg-amber-200 w-2/4  p-6 rounded-md shadow-2xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300  ">
               <h1 className="text-xl font-bold ">{restoInfo?.name}</h1>
-              <h3>
+              <h3 className="flex flex-wrap ">
                 {restoInfo?.avgRatingString}
                 {ratingStar(restoInfo?.avgRatingString)}(
                 {restoInfo?.totalRatingsString})
