@@ -15,7 +15,7 @@ import { SearchContext } from "./Context/SearchContext";
 import { useSelector } from "react-redux";
 
 const Title = () => (
-  <div className=" flex justify-center items-center">
+  <div className="  flex justify-center items-center">
     <Link to="/">
       <img
         alt="Food Villa "
@@ -39,7 +39,7 @@ const Header = () => {
   const [val, setVel] = useState(true);
   const cartItem = useSelector((Store) => Store.cart.items);
   return (
-    <div className=" fixed top-0 left-0 right-0 flex justify-between p-1 lg:h-20 bg-yellow-200 ">
+    <div className=" z-50 fixed top-0 left-0 right-0 flex justify-between p-1 lg:h-20 bg-yellow-200 ">
       <Title />
       <div className=" flex  justify-end items-center my-2  m-1  p-1">
         <nav className="flex justify-between items-center">

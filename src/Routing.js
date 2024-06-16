@@ -12,7 +12,7 @@ const Routing =()=>{
     return(
         <Provider store={Store}>
             <SearchProviderContext>
-            <Header  />
+            <Header />
             <Outlet />
             <Footer />
             </SearchProviderContext>

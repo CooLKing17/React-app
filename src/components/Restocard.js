@@ -12,7 +12,7 @@ const Restocard=({
   }) => {
     const header=aggregatedDiscountInfoV3.header;
     const subHeader=aggregatedDiscountInfoV3.subHeader;
-
+      console.log(name)
     return (
       <div className="w-60 h-80 flex flex-col justify-between items-center text-center m-2 p-4 rounded-lg transition ease-in-out delay-150 bg-gray-100 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300">
       <img

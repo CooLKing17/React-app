@@ -9,6 +9,7 @@ import Login from "./components/Login"
 import SignUp from "./components/SignUp"
 import Cart from "./components/Cart"
 import RestoDetails from "./components/RestoDetails"
+import FilterrMenu from "./components/Utilites/FilterrMenu"
 
 const AppLayout = createBrowserRouter(
     
@@ -52,6 +53,10 @@ const AppLayout = createBrowserRouter(
             {
                 path:"/resto/:id",
                 element:<RestoDetails />
+            },
+            {
+                path:"/restofilter/:id",
+                element:<FilterrMenu />
             },
            
         ]
